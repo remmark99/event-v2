@@ -1,0 +1,22 @@
+.form
+  margin-top: 50px
+  text-align: center
+  &__form
+    width: 400px
+    display: flex
+    margin: 0 auto
+    flex-direction: column
+  &__input
+    margin-top: 30px
+    border-radius: 10px
+    border: 1px solid #d2dae8
+    color: $dark-light
+    padding: 10px
+    transition: border 0.2s linear
+    &::placeholder
+      color: $text-color
+    &_text-area
+      resize: none
+    &:focus
+      border: 1px solid #3dcb35
+      outline: none

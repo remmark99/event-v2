@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="menu" class="menu">
+        <h1 class="menu__logo">CARTO</h1>
+        <ul class="menu__links">
+            <li class="menu__link"><i class="menu__icon fas fa-home"></i>landing</li>
+            <li class="menu__link"><i class="menu__icon fas fa-map-marked-alt"></i>map</li>
+            <li class="menu__link"><i class="menu__icon fas fa-share-square"></i>form</li>
+        </ul>
+    </nav>
+    <main id="panel">
+        <header class="header">
+            <div class="header__left">
+                <div class="header__button">
+                    <div class="header__line"></div>
+                    <div class="header__line"></div>
+                    <div class="header__line"></div>
+                </div>
+                <h1 class="header__heading">Map</h1>
+            </div>
+            <div class="header__right"></div>
+        </header>
+        <div class="form">
+            <h3>FORM</h3>
+            <form action="" method="post" class="form__form">
+                <input type="text" class="form__input form__input_text" placeholder="First Name">
+                <input type="text" class="form__input form__input_text" placeholder="Last Name">
+                <textarea name="" id="" cols="30" rows="10" class="form__input form__input_text-area" placeholder="No Idea..."></textarea>
+                <input type="submit" value="submit" class="form__input button" id="submit">
+            </form>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+    <script>
+        let slideout = new Slideout({
+            'panel': document.getElementById('panel'),
+            'menu': document.getElementById('menu'),
+            'padding': 250,
+            'tolerance': 70
+        });
+
+        // Toggle button
+        document.querySelector('.header__button').addEventListener('click', function() {
+            slideout.toggle();
+        });
+    </script>
+</body>
+</html>
