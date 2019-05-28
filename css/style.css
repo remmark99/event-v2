@@ -74,7 +74,7 @@ body, html {
   width: 270px;
   background: #121925;
   height: 100%;
-  padding: 30px 22px 0;
+  padding-top: 30px;
   position: relative;
   z-index: 2;
   overflow: auto;
@@ -89,9 +89,22 @@ body, html {
     font-size: 13px;
     line-height: 28px; }
   .sidebar__footer {
-    background: #0f151f; }
+    background: #0f151f;
+    padding: 27px 0 22px; }
   .sidebar__button {
-    margin-top: 20px; }
+    margin-top: 25px; }
+  .sidebar__container {
+    padding: 0 22px; }
+    .sidebar__container_list {
+      display: flex;
+      align-items: center; }
+    .sidebar__container_relative {
+      position: relative; }
+    .sidebar__container_smaller {
+      padding: 0 15px; }
+  .sidebar__text {
+    display: inline-block;
+    margin-top: 5px; }
 
 .logo {
   font-size: 13px;
@@ -105,11 +118,24 @@ body, html {
   letter-spacing: 1px; }
 
 .menu-button {
-  float: right;
-  font-size: 14px; }
+  position: absolute;
+  font-size: 14px;
+  top: -5px;
+  right: 0;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease; }
+  .menu-button:hover {
+    opacity: 0.7; }
+  .menu-button_opened {
+    background: #090d15;
+    color: #249def; }
 
 .search {
-  border-bottom: 1px solid #249def;
   margin-top: 40px;
   position: relative; }
   .search__input {
@@ -119,7 +145,8 @@ body, html {
     padding-right: 20px;
     height: 35px;
     color: white;
-    width: 100%; }
+    width: 100%;
+    border-bottom: 1px solid #249def; }
     .search__input:focus {
       outline: none; }
     .search__input::placeholder {
@@ -127,7 +154,7 @@ body, html {
   .search__icon {
     position: absolute;
     top: 40px;
-    right: 3px;
+    right: 15px;
     color: #2b374b;
     font-size: 14px; }
 
@@ -140,8 +167,6 @@ body, html {
     padding-left: 0;
     margin-top: 0; }
   .popular__item {
-    display: flex;
-    align-items: center;
     padding: 12px 0;
     cursor: pointer; }
     .popular__item:nth-child(odd) {
@@ -174,7 +199,10 @@ body, html {
   letter-spacing: 1px;
   line-height: 40px;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out; }
+  .button:hover {
+    opacity: 0.7; }
   .button_filled {
     background: #249def;
     border: none; }
