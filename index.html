@@ -13,132 +13,147 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="menu">
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-        </ul>
-    </div>
-    <div id="panel">
-        <div class="map" id="map"></div>
-        <div class="sidebar">
-            <div class="sidebar__body">
-                <div class="sidebar__logo logo">MYWORLD</div>
-                <i class="menu-button fas fa-bars"></i>
-                <form action="" class="search">
-                    <label for="search" class="search__label sidebar__span">search events:</label>
-                    <input type="text" class="search__input" id="search" placeholder="Search">
-                    <i class="search__icon fas fa-search"></i>
-                </form>
-                <section class="sidebar__popular popular">
-                    <span class="popular__text sidebar__span">popular events:</span>
-                    <ol class="popular__list">
-                        <li class="popular__item">
-                            <div class="popular__place">1</div>
-                            Моя хата
-                        </li>
-                        <li class="popular__item">
-                            <div class="popular__place">2</div>
-                            Еще какая-то хата
-                        </li>
-                        <li class="popular__item">
-                            <div class="popular__place">3</div>
-                            Общага
-                        </li>
-                        <li class="popular__item">
-                            <div class="popular__place">4</div>
-                            Filler
-                        </li>
-                        <li class="popular__item">
-                            <div class="popular__place">5</div>
-                            Filler
-                        </li>
-                        <li class="popular__item">
-                            <div class="popular__place">6</div>
-                            Filler
-                        </li>
-                        <li class="popular__item">
-                            <div class="popular__place">7</div>
-                            Filler
-                        </li>
-                        <li class="popular__item">
-                            <div class="popular__place">8</div>
-                            Filler
-                        </li>
-                        <li class="popular__item">
-                            <div class="popular__place">9</div>
-                            Filler
-                        </li>
-                        <li class="popular__item">
-                            <div class="popular__place">10</div>
-                            Filler
-                        </li>
-                    </ol>
-                </section>
-            </div>
-            <footer class="sidebar__footer">
-                <span class="sidebar__span">registration:</span>
-                <span class="sidebar__text">Join event right now. It's free!</span>
-                <div class="button sidebar__button">sign in</div>
-            </footer>
+<div id="menu">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</div>
+<div id="panel">
+    <div class="map" id="map"></div>
+    <div class="sidebar">
+        <div class="sidebar__body">
+            <div class="sidebar__logo logo">MYWORLD</div>
+            <i class="menu-button fas fa-bars"></i>
+            <form action="" class="search">
+                <label for="search" class="search__label sidebar__span">search events:</label>
+                <input type="text" class="search__input" id="search" placeholder="Search">
+                <i class="search__icon fas fa-search"></i>
+            </form>
+            <section class="sidebar__popular popular">
+                <span class="popular__text sidebar__span">popular events:</span>
+                <ol class="popular__list">
+                    <li class="popular__item">
+                        <div class="popular__place">1</div>
+                        Моя хата
+                    </li>
+                    <li class="popular__item">
+                        <div class="popular__place">2</div>
+                        Еще какая-то хата
+                    </li>
+                    <li class="popular__item">
+                        <div class="popular__place">3</div>
+                        Общага
+                    </li>
+                    <li class="popular__item">
+                        <div class="popular__place">4</div>
+                        Filler
+                    </li>
+                    <li class="popular__item">
+                        <div class="popular__place">5</div>
+                        Filler
+                    </li>
+                    <li class="popular__item">
+                        <div class="popular__place">6</div>
+                        Filler
+                    </li>
+                    <li class="popular__item">
+                        <div class="popular__place">7</div>
+                        Filler
+                    </li>
+                    <li class="popular__item">
+                        <div class="popular__place">8</div>
+                        Filler
+                    </li>
+                    <li class="popular__item">
+                        <div class="popular__place">9</div>
+                        Filler
+                    </li>
+                    <li class="popular__item">
+                        <div class="popular__place">10</div>
+                        Filler
+                    </li>
+                </ol>
+            </section>
         </div>
-        <div class="join join_hidden">
-            <div class="join__form">
-                <div class="join__top">
-                    <h2 class="join__heading">join us!</h2>
-                    <span class="join__text">The discoveries are waiting for you</span></div>
-                <form action="/here" class="join__bottom" method="post">
-                    <input type="text" class="join__input" placeholder="Your name">
-                    <input type="text" class="join__input" placeholder="Email">
-                    <button class="join__submit button button_filled">join event</button>
-                </form>
-            </div>
+        <footer class="sidebar__footer">
+            <span class="sidebar__span">registration:</span>
+            <span class="sidebar__text">Join event right now. It's free!</span>
+            <div class="button sidebar__button">sign in</div>
+        </footer>
+    </div>
+    <div class="join join_hidden">
+        <div class="join__form">
+            <div class="join__top">
+                <h2 class="join__heading">join us!</h2>
+                <span class="join__text">The discoveries are waiting for you</span></div>
+            <form action="/here" class="join__bottom" method="post" id="join">
+                <input type="text" class="join__input" placeholder="Your name" id="name">
+                <input type="text" class="join__input" placeholder="Email" id="email">
+                <button class="join__submit button button_filled">join event</button>
+            </form>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
-    <script
-            src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
-    <script>
-        window.onload = () => {
-            let slideout = new Slideout({
-                'panel': document.getElementById('panel'),
-                'menu': document.getElementById('menu'),
-                'padding': 250,
-                'tolerance': 70,
-                'side': 'right'
-            });
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script>
+    window.onload = () => {
+        let slideout = new Slideout({
+            'panel': document.getElementById('panel'),
+            'menu': document.getElementById('menu'),
+            'padding': 250,
+            'tolerance': 70,
+            'side': 'right'
+        });
 
-            mapboxgl.accessToken = 'pk.eyJ1IjoicmVtbWFyazk5OSIsImEiOiJjam1ocTJ1MW4yZjZhM3ZsaDBwYXRxd3FuIn0.hAlMGVhoN6VT38mDK1g8SA';
-            let map = new mapboxgl.Map({
-                container: 'map', // container id
-                style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
-                center: [-74.50, 40], // starting position [lng, lat]
-                zoom: 9 // starting zoom
-            });
+        mapboxgl.accessToken = 'pk.eyJ1IjoicmVtbWFyazk5OSIsImEiOiJjam1ocTJ1MW4yZjZhM3ZsaDBwYXRxd3FuIn0.hAlMGVhoN6VT38mDK1g8SA';
+        let map = new mapboxgl.Map({
+            container: 'map', // container id
+            style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+            center: [-74.50, 40], // starting position [lng, lat]
+            zoom: 9 // starting zoom
+        });
 
-            map = $(".map");
+        map = $(".map");
 
-            // Toggle button
-            document.querySelector('.menu-button').addEventListener('click', function() {
-                // map.css('margin-left', 250 + 'px');
-                slideout.toggle();
-            });
+        // Toggle button
+        document.querySelector('.menu-button').addEventListener('click', function() {
+            // map.css('margin-left', 250 + 'px');
+            slideout.toggle();
+        });
 
-            let formButton = $(".sidebar__button");
-            let form = $(".join");
-            formButton.on('click', () => {
-                form.toggle(".join_hidden");
-            });
+        let formButton = $(".sidebar__button");
+        let form = $(".join");
+        formButton.on('click', () => {
+            form.toggle(".join_hidden");
+        });
 
-            let test = document.getElementsByClassName("join")[0];
-            form.on('click', event => {
-                console.log(event.target);
-                if(event.target === test) form.toggle("join_hidden")
-            })
-        };
-    </script>
+        let test = document.getElementsByClassName("join")[0];
+        form.on('click', event => {
+            if(event.target === test) form.toggle("join_hidden")
+        })
+    };
+
+    let form = document.getElementById('join');
+    form.addEventListener('submit', () => {
+        event.preventDefault();
+
+        let formData = new FormData(this);
+
+        fetch('login.php', {
+            method: "POST",
+            body: formData
+        }).then(() => {
+            console.log("HELL YE");
+        }).catch(() => {
+            console.log("SOME ERROR OCCURED");
+        })
+    })
+</script>
 </body>
 </html>
