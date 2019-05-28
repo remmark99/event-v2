@@ -1,29 +1,40 @@
 * {
   box-sizing: border-box; }
 
-body {
-  font-family: "Montserrat", sans-serif;
-  color: #7b96c4;
-  line-height: 1; }
+body, html {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  color: white;
+  line-height: 1;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
 
-.header {
-  display: flex;
-  background: #f7faff;
-  padding: 0 30px;
-  height: 110px; }
-  .header__left {
-    display: flex;
-    align-items: center; }
-  .header__line {
-    width: 24px;
-    height: 3px;
-    border-radius: 2px;
-    background-color: #e3e9f4;
-    margin-top: 5px; }
-    .header__line:first-child {
-      margin-top: 0; }
-  .header__heading {
-    margin-left: 20px; }
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px; }
+
+::-webkit-scrollbar-track-piece {
+  background-color: #ccc;
+  -webkit-border-radius: 3px; }
+
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: #999;
+  -webkit-border-radius: 3px; }
+
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #999;
+  -webkit-border-radius: 3px; }
+
+::-webkit-scrollbar-button:horizontal:increment {
+  background-color: transparent; }
+
+::-webkit-scrollbar-button:vertical:increment {
+  background-color: transparent; }
+
+.container {
+  width: 1167px;
+  margin: 0 auto; }
 
 .slideout-menu {
   position: fixed;
@@ -58,71 +69,174 @@ body {
 .slideout-open .slideout-menu {
   display: block; }
 
-.menu__logo {
-  padding: 40px 0;
-  margin-top: 0;
-  text-align: center;
-  background: #21324f;
+.sidebar {
+  float: right;
+  width: 270px;
+  background: #121925;
+  height: 100%;
+  padding: 30px 22px 0;
   position: relative;
-  color: white;
-  font-size: 24px;
-  text-transform: uppercase; }
-  .menu__logo::after {
-    position: absolute;
-    top: 48.3px;
-    left: 156px;
-    content: "";
+  z-index: 2;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .sidebar__span {
     display: block;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #56cfef; }
-.menu__links {
-  list-style-type: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  color: #7b96c4;
-  padding: 0 35px; }
-.menu__link {
-  margin-top: 55px;
-  transition: color 0.2s linear;
-  cursor: pointer; }
-  .menu__link:hover {
-    color: #55e4d4; }
-.menu__icon {
-  margin-right: 25px;
-  font-size: 16px; }
+    text-transform: uppercase;
+    color: #44546c;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 28px; }
+  .sidebar__footer {
+    background: #0f151f; }
+  .sidebar__button {
+    margin-top: 20px; }
 
-.form {
-  margin-top: 50px;
-  text-align: center; }
-  .form__form {
-    width: 400px;
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column; }
-  .form__input {
-    margin-top: 30px;
-    border-radius: 10px;
-    border: 1px solid #d2dae8;
-    color: #293b5a;
-    padding: 10px;
-    transition: border 0.2s linear; }
-    .form__input::placeholder {
-      color: #7b96c4; }
-    .form__input_text-area {
-      resize: none; }
-    .form__input:focus {
-      border: 1px solid #3dcb35;
+.logo {
+  font-size: 13px;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 7px 12px;
+  display: inline-block;
+  letter-spacing: 1px; }
+
+.menu-button {
+  float: right;
+  font-size: 14px; }
+
+.search {
+  border-bottom: 1px solid #249def;
+  margin-top: 40px;
+  position: relative; }
+  .search__input {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    padding-right: 20px;
+    height: 35px;
+    color: white;
+    width: 100%; }
+    .search__input:focus {
       outline: none; }
+    .search__input::placeholder {
+      color: #2b374b; }
+  .search__icon {
+    position: absolute;
+    top: 40px;
+    right: 3px;
+    color: #2b374b;
+    font-size: 14px; }
+
+.popular {
+  margin-top: 32px;
+  color: white;
+  font-size: 14px; }
+  .popular__list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0; }
+  .popular__item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    cursor: pointer; }
+    .popular__item:nth-child(odd) {
+      background-color: #0f151f; }
+    .popular__item:hover .popular__place {
+      background: #F04A31; }
+  .popular__place {
+    color: white;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+    background-color: rgba(9, 13, 21, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    transition: background 0.3s ease;
+    border-radius: 2px; }
 
 .button {
   color: white;
-  background-color: #3dcb35;
-  padding: 10px 35px;
-  border-radius: 21px;
-  font-size: 14px;
+  border: 2px solid #227dbb;
+  background: transparent;
+  border-radius: 3px;
   text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 0 17px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  text-align: center;
   cursor: pointer; }
+  .button_filled {
+    background: #249def;
+    border: none; }
+
+.map {
+  position: absolute !important;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; }
+
+.join {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 23, 41, 0.9);
+  z-index: 1000; }
+  .join_hidden {
+    display: none; }
+  .join__form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    border-radius: 3px;
+    overflow: hidden; }
+  .join__top {
+    height: 216px;
+    background: linear-gradient(rgba(36, 157, 239, 0.85), rgba(36, 157, 239, 0.85)), url("https://matveyan.ru/Themes/Myworld/img/bg/login-bg.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 20px 15px; }
+  .join__heading {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 0; }
+  .join__text {
+    font-size: 16px; }
+  .join__bottom {
+    background: white;
+    padding: 20px 15px; }
+  .join__input {
+    display: block;
+    border: none;
+    border-bottom: 1px solid #249def;
+    width: 100%;
+    height: 35px;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 18px; }
+    .join__input:focus {
+      outline: none; }
+  .join__submit {
+    margin-top: 15px; }
+
+.slideout-panel {
+  height: 100%; }
 
 /*# sourceMappingURL=style.css.map */

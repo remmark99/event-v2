@@ -1,7 +1,33 @@
 *
   box-sizing: border-box
 
-body
+body, html
   +regular
-  color: $text-color
+  font-size: 14px
+  color: white
   line-height: 1
+  height: 100%
+  margin: 0
+  padding: 0
+
+::-webkit-scrollbar
+  width: 5px
+  height: 5px
+
+::-webkit-scrollbar-track-piece
+  background-color: #ccc
+  -webkit-border-radius: 3px
+
+::-webkit-scrollbar-thumb:horizontal
+  background-color: #999
+  -webkit-border-radius: 3px
+
+::-webkit-scrollbar-thumb:vertical
+  background-color: #999
+  -webkit-border-radius: 3px
+
+::-webkit-scrollbar-button:horizontal:increment
+  background-color: transparent
+
+::-webkit-scrollbar-button:vertical:increment
+  background-color: transparent
