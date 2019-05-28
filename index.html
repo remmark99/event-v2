@@ -148,10 +148,14 @@
         fetch('login.php', {
             method: "POST",
             body: formData
-        }).then(() => {
-            console.log("HELL YE");
-        }).catch(() => {
-            console.log("SOME ERROR OCCURED");
+        }).then((response) => {
+            if (response.ok) return response.json();
+            throw new Error('Something went wrong');
+        }).then(responseJson => {
+            //Working with the response
+            console.log(responseJson);
+        }).catch((error) => {
+            console.log(error);
         })
     })
 </script>
