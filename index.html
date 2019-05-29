@@ -13,12 +13,14 @@
     <title>Document</title>
 </head>
 <body>
-<div id="menu">
-    <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-    </ul>
+<div id="menu" class="menu">
+    <nav class="menu__links">
+        <a href="#" class="menu__link"><i class="menu__icon fas fa-map"></i>world</a>
+        <a href="#" class="menu__link"><i class="menu__icon fas fa-city"></i>city</a>
+        <a href="#" class="menu__link"><i class="menu__icon fas fa-calendar-alt"></i>events</a>
+        <a href="#" class="menu__link"><i class="menu__icon fas fa-calendar-check"></i>event</a>
+        <a href="#" class="menu__link"><i class="menu__icon fas fa-gifts"></i>random text</a>
+    </nav>
 </div>
 <div id="panel">
     <div class="map" id="map"></div>
@@ -130,7 +132,7 @@
         let slideout = new Slideout({
             'panel': document.getElementById('panel'),
             'menu': document.getElementById('menu'),
-            'padding': 250,
+            'padding': 200,
             'tolerance': 70,
             'side': 'right'
         });
@@ -150,7 +152,7 @@
         menuButton.addEventListener('click', function() {
             // map.css('margin-left', 250 + 'px');
             menuButton.classList.toggle('menu-button_opened');
-            if(cmenuButton.classList.contains('menu-button_opened')) {
+            if(menuButton.classList.contains('menu-button_opened')) {
                menuButton.innerHTML = "<i class=\"fas fa-times\"></i>";
             } else {
                 menuButton.innerHTML = "<i class=\"fas fa-bars\"></i>";
