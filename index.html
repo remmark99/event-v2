@@ -13,124 +13,113 @@
     <title>Document</title>
 </head>
 <body>
-<!--<div id="menu" class="menu">-->
-    <!--<nav class="menu__links">-->
-        <!--<a href="#" class="menu__link"><i class="menu__icon fas fa-map"></i>world</a>-->
-        <!--<a href="#" class="menu__link"><i class="menu__icon fas fa-city"></i>city</a>-->
-        <!--<a href="#" class="menu__link"><i class="menu__icon fas fa-calendar-alt"></i>events</a>-->
-        <!--<a href="#" class="menu__link"><i class="menu__icon fas fa-calendar-check"></i>event</a>-->
-        <!--<a href="#" class="menu__link"><i class="menu__icon fas fa-gifts"></i>random text</a>-->
-    <!--</nav>-->
-<!--</div>-->
-<div id="panel">
-    <div class="map" id="map"></div>
-    <div class="content">
-        <div class="sidebar">
-            <div class="sidebar__body">
-                <div class="sidebar__container sidebar__container_relative">
-                    <div class="sidebar__logo logo">MYWORLD</div>
-                    <div class="menu-button"><i class="fas fa-bars"></i></div>
-                </div>
-                <form action="" class="search sidebar__container sidebar__container_smaller">
-                    <label for="search" class="search__label sidebar__span">search events:</label>
-                    <input type="text" class="search__input" id="search" placeholder="Search">
-                    <i class="search__icon fas fa-search"></i>
-                </form>
-                <section class="sidebar__popular popular">
-                    <span class="popular__text sidebar__span sidebar__container">popular events:</span>
-                    <ol class="popular__list">
-                        <li class="popular__item">
-                            <div class="sidebar__container sidebar__container_list">
-                            <div class="popular__place">1</div>
-                            <span class="popular__event">Моя хата</span>
-                            </div>
-                        </li>
-                        <li class="popular__item">
-                            <div class="sidebar__container sidebar__container_list">
-                                <div class="popular__place">2</div>
-                                <span class="popular__event">Еще какая-то хата</span>
-                            </div>
-                            </li>
-                        <li class="popular__item">
-                            <div class="sidebar__container sidebar__container_list">
-                                <div class="popular__place">3</div>
-                                <span class="popular__event">Общага</span>
-                            </div>
-                        </li>
-                        <li class="popular__item">
-                            <div class="sidebar__container sidebar__container_list">
-                                <div class="popular__place">4</div>
-                                <span class="popular__event">Filler</span>
-                            </div>
-                        </li>
-                        <li class="popular__item">
-                            <div class="sidebar__container sidebar__container_list">
-                                <div class="popular__place">5</div>
-                                <span class="popular__event">Filler</span>
-                            </div>
-                        </li>
-                        <li class="popular__item">
-                            <div class="sidebar__container sidebar__container_list">
-                                <div class="popular__place">6</div>
-                                <span class="popular__event">Filler</span>
-                            </div>
-                        </li>
-                        <li class="popular__item">
-                            <div class="sidebar__container sidebar__container_list">
-                                <div class="popular__place">7</div>
-                                <span class="popular__event">Filler</span>
-                            </div>
-                        </li>
-                        <li class="popular__item">
-                            <div class="sidebar__container sidebar__container_list">
-                                <div class="popular__place">8</div>
-                                <span class="popular__event">Filler</span>
-                            </div>
-                        </li>
-                        <li class="popular__item">
-                            <div class="sidebar__container sidebar__container_list">
-                                <div class="popular__place">9</div>
-                                <span class="popular__event">Filler</span>
-                            </div>
-                        </li>
-                        <li class="popular__item">
-                            <div class="sidebar__container sidebar__container_list">
-                                <div class="popular__place">10</div>
-                                <span class="popular__event">Filler</span>
-                            </div>
-                        </li>
-                    </ol>
-                </section>
+<div class="map" id="map"></div>
+<div class="content">
+    <div class="sidebar">
+        <div class="sidebar__body">
+            <div class="sidebar__container sidebar__container_relative">
+                <div class="sidebar__logo logo">MYWORLD</div>
+                <div class="menu-button"><i class="fas fa-bars"></i></div>
             </div>
-            <footer class="sidebar__footer">
-                <div class="sidebar__container">
-                    <span class="sidebar__span">registration:</span>
-                    <span class="sidebar__text">Join event right now. It's free!</span>
-                    <div class="button sidebar__button">sign in</div>
-                </div>
-            </footer>
-        </div>
-        <div id="menu" class="menu">
-            <nav class="menu__links">
-                <a href="#" class="menu__link"><i class="menu__icon fas fa-map"></i>world</a>
-                <a href="#" class="menu__link"><i class="menu__icon fas fa-city"></i>city</a>
-                <a href="#" class="menu__link"><i class="menu__icon fas fa-calendar-alt"></i>events</a>
-                <a href="#" class="menu__link"><i class="menu__icon fas fa-calendar-check"></i>event</a>
-                <a href="#" class="menu__link"><i class="menu__icon fas fa-gifts"></i>random text</a>
-            </nav>
-        </div>
-        <div class="join join_hidden">
-        <div class="join__form">
-            <div class="join__top">
-                <h2 class="join__heading">join us!</h2>
-                <span class="join__text">The discoveries are waiting for you</span></div>
-            <form action="/here" class="join__bottom" method="post" id="join">
-                <input type="text" class="join__input" placeholder="Your name" id="name">
-                <input type="text" class="join__input" placeholder="Email" id="email">
-                <button class="join__submit button button_filled">join event</button>
+            <form action="" class="search sidebar__container sidebar__container_smaller">
+                <label for="search" class="search__label sidebar__span">search events:</label>
+                <input type="text" class="search__input" id="search" placeholder="Search">
+                <i class="search__icon fas fa-search"></i>
             </form>
+            <section class="sidebar__popular popular">
+                <span class="popular__text sidebar__span sidebar__container">popular events:</span>
+                <ol class="popular__list">
+                    <li class="popular__item">
+                        <div class="sidebar__container sidebar__container_list">
+                        <div class="popular__place">1</div>
+                        <span class="popular__event">Моя хата</span>
+                        </div>
+                    </li>
+                    <li class="popular__item">
+                        <div class="sidebar__container sidebar__container_list">
+                            <div class="popular__place">2</div>
+                            <span class="popular__event">Еще какая-то хата</span>
+                        </div>
+                        </li>
+                    <li class="popular__item">
+                        <div class="sidebar__container sidebar__container_list">
+                            <div class="popular__place">3</div>
+                            <span class="popular__event">Общага</span>
+                        </div>
+                    </li>
+                    <li class="popular__item">
+                        <div class="sidebar__container sidebar__container_list">
+                            <div class="popular__place">4</div>
+                            <span class="popular__event">Filler</span>
+                        </div>
+                    </li>
+                    <li class="popular__item">
+                        <div class="sidebar__container sidebar__container_list">
+                            <div class="popular__place">5</div>
+                            <span class="popular__event">Filler</span>
+                        </div>
+                    </li>
+                    <li class="popular__item">
+                        <div class="sidebar__container sidebar__container_list">
+                            <div class="popular__place">6</div>
+                            <span class="popular__event">Filler</span>
+                        </div>
+                    </li>
+                    <li class="popular__item">
+                        <div class="sidebar__container sidebar__container_list">
+                            <div class="popular__place">7</div>
+                            <span class="popular__event">Filler</span>
+                        </div>
+                    </li>
+                    <li class="popular__item">
+                        <div class="sidebar__container sidebar__container_list">
+                            <div class="popular__place">8</div>
+                            <span class="popular__event">Filler</span>
+                        </div>
+                    </li>
+                    <li class="popular__item">
+                        <div class="sidebar__container sidebar__container_list">
+                            <div class="popular__place">9</div>
+                            <span class="popular__event">Filler</span>
+                        </div>
+                    </li>
+                    <li class="popular__item">
+                        <div class="sidebar__container sidebar__container_list">
+                            <div class="popular__place">10</div>
+                            <span class="popular__event">Filler</span>
+                        </div>
+                    </li>
+                </ol>
+            </section>
         </div>
+        <footer class="sidebar__footer">
+            <div class="sidebar__container">
+                <span class="sidebar__span">registration:</span>
+                <span class="sidebar__text">Join event right now. It's free!</span>
+                <div class="button sidebar__button">sign in</div>
+            </div>
+        </footer>
     </div>
+    <div id="menu" class="menu">
+        <nav class="menu__links">
+            <a href="#" class="menu__link"><i class="menu__icon fas fa-map"></i>world</a>
+            <a href="#" class="menu__link"><i class="menu__icon fas fa-city"></i>city</a>
+            <a href="#" class="menu__link"><i class="menu__icon fas fa-calendar-alt"></i>events</a>
+            <a href="#" class="menu__link"><i class="menu__icon fas fa-calendar-check"></i>event</a>
+            <a href="#" class="menu__link"><i class="menu__icon fas fa-gifts"></i>random text</a>
+        </nav>
+    </div>
+</div>
+<div class="join join_hidden">
+    <div class="join__form">
+        <div class="join__top">
+            <h2 class="join__heading">join us!</h2>
+            <span class="join__text">The discoveries are waiting for you</span></div>
+        <form action="/here" class="join__bottom" method="post" id="join">
+            <input type="text" class="join__input" placeholder="Your name" id="name">
+            <input type="text" class="join__input" placeholder="Email" id="email">
+            <button class="join__submit button button_filled">join event</button>
+        </form>
     </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
