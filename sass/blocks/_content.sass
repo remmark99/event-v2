@@ -2,4 +2,9 @@
   display: flex
   float: right
   z-index: 200
-  position: relative
+  transition: transform .3s
+  &__wrapper
+    display: flex
+    position: relative
+  &_hidden-event
+    transform: translateX(600px)
