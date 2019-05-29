@@ -36,6 +36,12 @@ body, html {
   width: 1167px;
   margin: 0 auto; }
 
+.content {
+  display: flex;
+  float: right;
+  z-index: 200;
+  position: relative; }
+
 .slideout-menu {
   position: fixed;
   top: 0;
@@ -71,7 +77,12 @@ body, html {
 
 .menu {
   width: 200px;
-  background: #090D15; }
+  height: 100vh;
+  background: #090D15;
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  top: 0; }
   .menu__links {
     font-size: 13px;
     text-transform: uppercase;
@@ -95,17 +106,17 @@ body, html {
     transition: color 0.3s ease; }
 
 .sidebar {
-  float: right;
   width: 270px;
   background: #121925;
   height: 100%;
   padding-top: 30px;
   position: relative;
-  z-index: 2;
+  z-index: 3;
   overflow: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  transition: transform 0.3s; }
   .sidebar__span {
     display: block;
     text-transform: uppercase;
@@ -130,6 +141,8 @@ body, html {
   .sidebar__text {
     display: inline-block;
     margin-top: 5px; }
+  .sidebar__opened {
+    transform: translateX(-200px); }
 
 .logo {
   font-size: 13px;
